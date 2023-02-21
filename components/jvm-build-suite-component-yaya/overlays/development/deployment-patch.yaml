@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-yaya
+  namespace: jvm-build-xiog-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:aef1c50cb7a4be46f91b54c11be474bcafd00e05695dcde684d9996d72a30064
+        name: container-image
+        resources: {}
+status: {}

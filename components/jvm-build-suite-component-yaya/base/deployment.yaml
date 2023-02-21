@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-yaya
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:9b7a4d533cb046dd96df68f6cce77b34
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:aef1c50cb7a4be46f91b54c11be474bcafd00e05695dcde684d9996d72a30064
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
